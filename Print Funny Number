@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class math{
+    private:
+    int _x;
+    int _y;
+public:
+    math(int x, int y){
+       _x=x;
+       _y=y;  
+    }
+    
+    
+    int add(){
+        return _x+ _y;
+    }
+    
+    int subtract(){
+        return _x- _y;
+    }
+    
+    
+    };
+
+int main(){
+    math obj (6,63);
+    cout << obj.add();
+    return 0;
+}
